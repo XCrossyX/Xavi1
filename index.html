@@ -7,7 +7,7 @@
     <!-- Ważne pod telefony -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Podpinamy CSS (jeszcze pusty, ale musi być) -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,43 +18,43 @@
         <!-- EKRAN -->
         <div class="screen">
 
-            <!-- LOGO (na razie tylko testowo, potem zniknie) -->
+            <!-- LOGO -->
             <img src="asset/xavi-logo.png" alt="Xavi Logo" class="logo">
 
             <!-- GRID APLIKACJI -->
             <div class="apps">
 
-                <div class="app">
+                <div class="app" onclick="openBrowser()">
                     <div class="icon">🌐</div>
                     <div class="label">Przeglądarka</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openYouTube()">
                     <div class="icon">▶️</div>
                     <div class="label">YouTube</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openSettings()">
                     <div class="icon">⚙️</div>
                     <div class="label">Ustawienia</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openChatGPT()">
                     <div class="icon">🤖</div>
                     <div class="label">ChatGPT</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openContacts()">
                     <div class="icon">👥</div>
                     <div class="label">Kontakty</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openMessages()">
                     <div class="icon">💬</div>
                     <div class="label">Wiadomości</div>
                 </div>
 
-                <div class="app">
+                <div class="app" onclick="openCamera()">
                     <div class="icon">📷</div>
                     <div class="label">Aparat</div>
                 </div>
@@ -63,8 +63,7 @@
         </div>
     </div>
 
-    <!-- JS (też jeszcze pusty) -->
+    <!-- JS – MUSI ZOSTAĆ -->
     <script src="js/app.js"></script>
 </body>
 </html>
-
