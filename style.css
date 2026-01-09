@@ -1,1 +1,86 @@
+/* RESET – żeby przeglądarka nie robiła swoich cudów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TŁO STRONY (poza telefonem) */
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* RAMKA TELEFONU */
+.phone {
+    width: 360px;
+    height: 720px; /* 9:16 */
+    background: black;
+    border-radius: 30px;
+    padding: 12px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+/* EKRAN TELEFONU */
+.screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-image: url("../asset/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LOGO (na razie na górze) */
+.logo {
+    width: 90px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* GRID APLIKACJI */
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* POJEDYNCZA APLIKACJA */
+.app {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* IKONA (EMOJI) */
+.icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 0 auto 6px auto;
+    backdrop-filter: blur(6px);
+    transition: transform 0.15s ease;
+}
+
+/* EFEKT KLIKNIĘCIA */
+.app:active .icon {
+    transform: scale(0.9);
+}
+
+/* NAZWA APLIKACJI */
+.label {
+    font-size: 13px;
+}
 
