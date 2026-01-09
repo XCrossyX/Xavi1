@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ustawienia – XavvOne OS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ten sam CSS co system -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="phone">
+    <div class="screen settings-screen">
+
+        <!-- NAGŁÓWEK -->
+        <div class="settings-header">
+            <span onclick="goBack()" class="back">←</span>
+            <h1>Ustawienia</h1>
+        </div>
+
+        <!-- SEKCJA WLAN -->
+        <div class="settings-section">
+            <h2>Sieć</h2>
+            <div class="settings-item">
+                <span>WLAN</span>
+                <span class="status on">Włączone</span>
+            </div>
+        </div>
+
+        <!-- SEKCJA INFO -->
+        <div class="settings-section">
+            <h2>Informacje o urządzeniu</h2>
+
+            <div class="settings-item">
+                <span>Pamięć</span>
+                <span>15 GB / 1 TB</span>
+            </div>
+
+            <div class="settings-item">
+                <span>Nazwa urządzenia</span>
+                <span>Xavi 1 5G</span>
+            </div>
+
+            <div class="settings-item">
+                <span>Wersja oprogramowania</span>
+                <span>XavvOne OS 2.2</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function goBack() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
 
