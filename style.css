@@ -38,7 +38,7 @@ body {
     overflow: hidden;
 }
 
-/* LOGO (na razie na górze) */
+/* LOGO */
 .logo {
     width: 90px;
     display: block;
@@ -84,3 +84,52 @@ body {
     font-size: 13px;
 }
 
+/* ===================== */
+/* ===== USTAWIENIA ==== */
+/* ===================== */
+
+.settings-screen {
+    background-image: none;
+    background: #0f0f0f;
+    color: white;
+}
+
+.settings-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.settings-header h1 {
+    font-size: 20px;
+}
+
+.back {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.settings-section {
+    margin-bottom: 25px;
+}
+
+.settings-section h2 {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #1c1c1c;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.status.on {
+    color: #4caf50;
+}
